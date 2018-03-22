@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myproject.joy.bartapplication">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="Bart App"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id"/>
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps">
+        </activity>
+
+        <activity android:name=".LoginActivity" android:parentActivityName=".MapsActivity"/>
+        <activity android:name=".RegisterActivity" android:parentActivityName=".LoginActivity"/>
+        <activity android:name=".ProfileActivity" android:parentActivityName=".MapsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MapsActivity" />
+        </activity>
+        <activity android:name=".ScheduleActivity" android:parentActivityName=".MapsActivity"/>
+        <activity android:name=".LocationRequestResponse" android:parentActivityName=".MapsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LocationActivity" />
+
+        <service android:name=".LocationStorageService" />
+
+  	<activity android:name=".TrackActivity"
+        android:parentActivityName=".MapsActivity"
+		android:exported="true"/>
+
+	<activity
+            android:name=".MapsActivity2"
+            android:label="@string/title_activity_maps2"
+            android:parentActivityName=".TrackActivity">
+
+    </activity>
+        <service
+            android:name=".FirebaseIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".MyService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ClipperAndParking"
+            android:parentActivityName=".MapsActivity">
+
+        </activity>
+	
+	<activity android:name=".InviteActivity"
+        android:parentActivityName=".MapsActivity"/>
+    </application>
+
+</manifest>

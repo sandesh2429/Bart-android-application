@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.myproject.joy.bartapplication.ProfileActivity">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardMaxElevation="1dp"
+            card_view:cardElevation="1dp"
+            app:cardBackgroundColor="@color/cardview_dark_background">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                
+                <ImageView
+                    android:src="@drawable/download"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_person_profile"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#616161" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/profilePicEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/profilePic"
+                    android:layout_alignEnd="@id/profilePic"
+                    android:src="@drawable/ic_edit_photo"
+                    android:theme="@style/Widget.AppCompat.Button.Colored">
+
+                </android.support.design.widget.FloatingActionButton>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:id="@+id/profileNamePic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_person_pic2" />
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:hint="Name"
+                android:textColorHint="@color/logoColor"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/profilePhonePic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_phone_logo" />
+
+            <EditText
+                android:id="@+id/profileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number"
+                android:textColorHint="@color/logoColor"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/profileEmailPic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_email_logo" />
+
+            <EditText
+                android:id="@+id/profileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="@color/logoColor"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/profileSaveButton"
+            android:layout_width="187dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="49dp"
+            android:elevation="20dp"
+            android:text="SAVE"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+</ScrollView>

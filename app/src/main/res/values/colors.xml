@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976d2</color>
+    <color name="colorPrimaryDark">#004ba0</color>
+    <color name="colorAccent">#023059</color>
+
+    <color name="logoColor">#3989EF</color>
+    <color name="secondPage">#757575</color>
+    <color name="text">#ffffff</color>
+    <color name="text_two">#94ffffff</color>
+    <color name="green">#940ce61f</color>
+
+    <color name="orange">#f4a742</color>
+</resources>

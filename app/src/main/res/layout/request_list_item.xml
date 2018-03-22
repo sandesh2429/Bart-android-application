@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardMaxElevation="3dp"
+    card_view:cardElevation="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    app:cardBackgroundColor="#757575">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/requestPic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_person_profile"
+            app:civ_border_color="#616161"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/requestName"
+            android:layout_width="183dp"
+            android:layout_height="42dp"
+            android:layout_toEndOf="@+id/requestPic"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/sendNotifBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_chevron_right_black_24dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <Switch
+            android:id="@+id/requestSwitchButton"
+            android:layout_width="49dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

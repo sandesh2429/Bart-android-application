@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "722958253506",
+    "firebase_url": "https://bartproject-67b93.firebaseio.com",
+    "project_id": "bartproject-67b93",
+    "storage_bucket": "bartproject-67b93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722958253506:android:4a7c29a341d68d01",
+        "android_client_info": {
+          "package_name": "com.myproject.joy.bartapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722958253506-kkb4m04t2hghshrhfpk10e2br20secd1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myproject.joy.bartapplication",
+            "certificate_hash": "24255bb0ef7c1a5d051c229367ef794cd69cfabc"
+          }
+        },
+        {
+          "client_id": "722958253506-t8826i6o3saat5q94hbj05flgbvbndvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkHzQb6mFaM4arK5J8aFhS7Nxz6Qkcwr0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "722958253506-t8826i6o3saat5q94hbj05flgbvbndvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
